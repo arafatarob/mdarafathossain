@@ -1,12 +1,4 @@
 {
-  "functions": {
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "index.php"
-    }
-  ]
-},
   "routes": [
     {
       "src": "/(.*)",
