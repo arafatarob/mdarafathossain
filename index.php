@@ -1,7 +1,4 @@
-<?php
-session_start();
-  require('./config/db.php');
-?>
+
 
 <html lang="en">
 <head>

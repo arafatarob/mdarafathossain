@@ -12,7 +12,8 @@
 <body>
 
     <?php 
-        include './landiing_common/header.php';
+      include './landiing_common/header.php';
+
     ?>
 
 <!-- ══════════ CONTACT ══════════ -->
@@ -25,53 +26,55 @@
       <div class="contact-items">
         <div class="contact-item">
           <div class="ci-icon"><i class="fa fa-envelope"></i></div>
-          <div><div class="ci-label">Email</div><div class="ci-value">arafat@example.com</div></div>
+          <div><div class="ci-label">Email</div><div class="ci-value">mdarafathossenarob@gmail.com</div></div>
         </div>
         <div class="contact-item">
           <div class="ci-icon"><i class="fa fa-phone"></i></div>
-          <div><div class="ci-label">Phone / WhatsApp</div><div class="ci-value">+880 1XXX-XXXXXX</div></div>
+          <div><div class="ci-label">Phone / WhatsApp</div><div class="ci-value">+880 1746500026</div></div>
         </div>
         <div class="contact-item">
           <div class="ci-icon"><i class="fa fa-map-marker-alt"></i></div>
-          <div><div class="ci-label">Location</div><div class="ci-value">Bhairab, Dhaka Division, Bangladesh</div></div>
+          <div><div class="ci-label">Location</div><div class="ci-value">Dinajpur, Bangladesh</div></div>
         </div>
       </div>
       <div class="social-links">
-        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+        <a target="_blank" href="https://github.com/arafatarob" class="social-link"><i class="fab fa-github"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/mdarafathossainaofficial/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        <a target="_blank" href="https://x.com/arafat7690" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a target="_blank" href="https://www.facebook.com/md.arafat.hossain.8786/" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a target="_blank" href="https://wa.me/01746500026" class="social-link"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
 
     <div class="contact-form">
       <div class="form-card">
         <div class="form-title">Send Me a Message</div>
-        <div class="form-row">
-          <div class="form-group">
-            <label>First Name</label>
-            <input type="text" placeholder="John" />
+            <form action="./action/contact_send.php" method="post">
+            <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" name="fName" placeholder="John" />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" name="lName" placeholder="Doe" />
+            </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="emailAddress" placeholder="john@example.com" />
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" name="subject" placeholder="Project inquiry..." />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea name="message" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" name="sendContact" class="btn-send"><i class="fa fa-paper-plane"></i> Send Message</button>
           </div>
-          <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" placeholder="Doe" />
-          </div>
-        </div>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" placeholder="john@example.com" />
-        </div>
-        <div class="form-group">
-          <label>Subject</label>
-          <input type="text" placeholder="Project inquiry..." />
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea placeholder="Tell me about your project..."></textarea>
-        </div>
-        <button class="btn-send"><i class="fa fa-paper-plane"></i> Send Message</button>
-      </div>
+        </form>
     </div>
   </div>
 </section>

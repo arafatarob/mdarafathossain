@@ -38,7 +38,7 @@ session_start();
   <head>
     <meta charset="utf-8">
     <title>order update</title>
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/dashboard.css">
   </head>
   <body>
 
@@ -112,6 +112,6 @@ session_start();
       </div>
 
 
-    <script src="../assets/script.js" charset="utf-8"></script>
+    <script src="../assets/dashboard.js" charset="utf-8"></script>
   </body>
 </html>

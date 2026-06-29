@@ -27,7 +27,7 @@ session_start();
             $stm->close();
 
               echo "<script>alert('logged in')</script>";
-              header('Location: ../dashboard/dashboard.php');
+              header('Location: ../index.php');
               exit();
           }else{
               echo "<script>alert('incorrect password!');</script>";
